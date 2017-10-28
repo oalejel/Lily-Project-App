@@ -14,6 +14,7 @@
 		3D93B7751F9EA7B400559FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D93B7731F9EA7B400559FD5 /* LaunchScreen.storyboard */; };
 		3D93B7801F9EA7B400559FD5 /* LilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93B77F1F9EA7B400559FD5 /* LilyTests.swift */; };
 		3D93B78B1F9EA7B400559FD5 /* LilyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93B78A1F9EA7B400559FD5 /* LilyUITests.swift */; };
+		3DF316E21FA3DB6800D6633B /* lily_flower@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF316E11FA3DB6800D6633B /* lily_flower@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3D93B7861F9EA7B400559FD5 /* LilyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D93B78A1F9EA7B400559FD5 /* LilyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilyUITests.swift; sourceTree = "<group>"; };
 		3D93B78C1F9EA7B400559FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF316E11FA3DB6800D6633B /* lily_flower@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lily_flower@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3D93B76A1F9EA7B400559FD5 /* AppDelegate.swift */,
 				3D93B76C1F9EA7B400559FD5 /* ViewController.swift */,
 				3D93B76E1F9EA7B400559FD5 /* Main.storyboard */,
+				3DF316E11FA3DB6800D6633B /* lily_flower@3x.png */,
 				3D93B7711F9EA7B400559FD5 /* Assets.xcassets */,
 				3D93B7731F9EA7B400559FD5 /* LaunchScreen.storyboard */,
 				3D93B7761F9EA7B400559FD5 /* Info.plist */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF316E21FA3DB6800D6633B /* lily_flower@3x.png in Resources */,
 				3D93B7751F9EA7B400559FD5 /* LaunchScreen.storyboard in Resources */,
 				3D93B7721F9EA7B400559FD5 /* Assets.xcassets in Resources */,
 				3D93B7701F9EA7B400559FD5 /* Main.storyboard in Resources */,
