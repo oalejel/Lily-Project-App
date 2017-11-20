@@ -9,10 +9,39 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var addFormButton: UIButton!
+    @IBOutlet weak var viewDataButton: UIButton!
+    
+    @IBOutlet weak var settingsButton: SqueezeButton!
+    @IBOutlet weak var exportButton: SqueezeButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.backgroundColor = .white
+        
+        addFormButton.layer.cornerRadius = 10
+        addFormButton.layer.masksToBounds = false
+        addFormButton.layer.shadowColor = UIColor.black.cgColor
+        addFormButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+        addFormButton.layer.shadowRadius = 5
+        addFormButton.layer.shadowOpacity = 0.4
+        
+        viewDataButton.layer.cornerRadius = 10
+        viewDataButton.layer.masksToBounds = false
+        viewDataButton.layer.shadowColor = UIColor.black.cgColor
+        viewDataButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+        viewDataButton.layer.shadowRadius = 5
+        viewDataButton.layer.shadowOpacity = 0.4
+        
+        settingsButton.layer.cornerRadius = settingsButton.frame.size.height / 2
+        settingsButton.layer.masksToBounds = false
+        
+        exportButton.layer.cornerRadius = 10
+        exportButton.layer.masksToBounds = false
+    
+        
         (parent as? UINavigationController)?.navigationBar.prefersLargeTitles = true
         (parent as? UINavigationController)?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
@@ -24,12 +53,15 @@ class ViewController: UIViewController {
         let flowerItem = UIBarButtonItem(image: flowerImage, style: .plain, target: nil, action: nil)
         navigationItem.rightBarButtonItem = flowerItem
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        var newProgress = formProgressView.progress + 0.05
+//        formProgressView.setProgress(newProgress, animated: true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
