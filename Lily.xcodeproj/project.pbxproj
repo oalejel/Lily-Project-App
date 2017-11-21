@@ -19,6 +19,7 @@
 		3D93B78B1F9EA7B400559FD5 /* LilyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93B78A1F9EA7B400559FD5 /* LilyUITests.swift */; };
 		3DE136361FB53E29002F2C46 /* LilyTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE136351FB53E29002F2C46 /* LilyTableController.swift */; };
 		3DF316E21FA3DB6800D6633B /* lily_flower@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF316E11FA3DB6800D6633B /* lily_flower@3x.png */; };
+		409DFF2A078B1A8643DDEE84 /* libPods-Lily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032FAA3611D5398628B57303 /* libPods-Lily.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		032FAA3611D5398628B57303 /* libPods-Lily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C12D34AD4A11088AC4F3F7D /* Pods-Lily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lily/Pods-Lily.debug.xcconfig"; sourceTree = "<group>"; };
+		354491A209F4B901B8220DEF /* Pods-Lily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lily.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lily/Pods-Lily.release.xcconfig"; sourceTree = "<group>"; };
+		3D279F211FC4880500F04529 /* Lily-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lily-Bridging-Header.h"; sourceTree = "<group>"; };
 		3D8681121FC371D100718638 /* SettingsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableController.swift; sourceTree = "<group>"; };
 		3D8681141FC3738500718638 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		3D8E08E51FB7F9D1007C7ED2 /* SqueezeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SqueezeButton.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				409DFF2A078B1A8643DDEE84 /* libPods-Lily.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +97,8 @@
 				3D93B77E1F9EA7B400559FD5 /* LilyTests */,
 				3D93B7891F9EA7B400559FD5 /* LilyUITests */,
 				3D93B7681F9EA7B400559FD5 /* Products */,
+				422AC8F949E91C840FFD5A0D /* Pods */,
+				EE0F3E55484FF2006D0CAEEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +126,7 @@
 				3D93B7711F9EA7B400559FD5 /* Assets.xcassets */,
 				3D93B7731F9EA7B400559FD5 /* LaunchScreen.storyboard */,
 				3D93B7761F9EA7B400559FD5 /* Info.plist */,
+				3D279F211FC4880500F04529 /* Lily-Bridging-Header.h */,
 			);
 			path = Lily;
 			sourceTree = "<group>";
@@ -140,6 +149,23 @@
 			path = LilyUITests;
 			sourceTree = "<group>";
 		};
+		422AC8F949E91C840FFD5A0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C12D34AD4A11088AC4F3F7D /* Pods-Lily.debug.xcconfig */,
+				354491A209F4B901B8220DEF /* Pods-Lily.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE0F3E55484FF2006D0CAEEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				032FAA3611D5398628B57303 /* libPods-Lily.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D93B78F1F9EA7B400559FD5 /* Build configuration list for PBXNativeTarget "Lily" */;
 			buildPhases = (
+				D2201CD3CFAC30A09AFE357D /* [CP] Check Pods Manifest.lock */,
 				3D93B7631F9EA7B300559FD5 /* Sources */,
 				3D93B7641F9EA7B300559FD5 /* Frameworks */,
 				3D93B7651F9EA7B300559FD5 /* Resources */,
+				305B9FCA151B76DB139CB93A /* [CP] Embed Pods Frameworks */,
+				B2FD54B9B49305509B573788 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +237,7 @@
 				TargetAttributes = {
 					3D93B7661F9EA7B300559FD5 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					3D93B77A1F9EA7B400559FD5 = {
@@ -269,6 +299,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		305B9FCA151B76DB139CB93A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lily/Pods-Lily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2FD54B9B49305509B573788 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lily/Pods-Lily-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2201CD3CFAC30A09AFE357D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lily-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D93B7631F9EA7B300559FD5 /* Sources */ = {
@@ -444,14 +525,18 @@
 		};
 		3D93B7901F9EA7B400559FD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C12D34AD4A11088AC4F3F7D /* Pods-Lily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DL7989H5XT;
 				INFOPLIST_FILE = Lily/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = omaralejel.Lily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lily/Lily-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,14 +544,17 @@
 		};
 		3D93B7911F9EA7B400559FD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354491A209F4B901B8220DEF /* Pods-Lily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DL7989H5XT;
 				INFOPLIST_FILE = Lily/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = omaralejel.Lily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lily/Lily-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
