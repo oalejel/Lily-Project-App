@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D279F261FC488AA00F04529 /* ExcelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D279F251FC488AA00F04529 /* ExcelManager.swift */; };
 		3D8681131FC371D100718638 /* SettingsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8681121FC371D100718638 /* SettingsTableController.swift */; };
 		3D8681151FC3738500718638 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8681141FC3738500718638 /* SettingsManager.swift */; };
 		3D8E08E61FB7F9D1007C7ED2 /* SqueezeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E08E51FB7F9D1007C7ED2 /* SqueezeButton.swift */; };
@@ -44,6 +45,8 @@
 		1C12D34AD4A11088AC4F3F7D /* Pods-Lily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lily/Pods-Lily.debug.xcconfig"; sourceTree = "<group>"; };
 		354491A209F4B901B8220DEF /* Pods-Lily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lily.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lily/Pods-Lily.release.xcconfig"; sourceTree = "<group>"; };
 		3D279F211FC4880500F04529 /* Lily-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lily-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D279F251FC488AA00F04529 /* ExcelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelManager.swift; sourceTree = "<group>"; };
+		3D279F271FC4890E00F04529 /* excel_form.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = excel_form.xlsx; sourceTree = "<group>"; };
 		3D8681121FC371D100718638 /* SettingsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableController.swift; sourceTree = "<group>"; };
 		3D8681141FC3738500718638 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		3D8E08E51FB7F9D1007C7ED2 /* SqueezeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SqueezeButton.swift; sourceTree = "<group>"; };
@@ -115,10 +118,12 @@
 		3D93B7691F9EA7B400559FD5 /* Lily */ = {
 			isa = PBXGroup;
 			children = (
+				3D279F271FC4890E00F04529 /* excel_form.xlsx */,
 				3D93B76A1F9EA7B400559FD5 /* AppDelegate.swift */,
 				3D93B76C1F9EA7B400559FD5 /* ViewController.swift */,
 				3D93B76E1F9EA7B400559FD5 /* Main.storyboard */,
 				3D8681121FC371D100718638 /* SettingsTableController.swift */,
+				3D279F251FC488AA00F04529 /* ExcelManager.swift */,
 				3D8681141FC3738500718638 /* SettingsManager.swift */,
 				3DE136351FB53E29002F2C46 /* LilyTableController.swift */,
 				3D8E08E51FB7F9D1007C7ED2 /* SqueezeButton.swift */,
@@ -281,6 +286,7 @@
 				3D93B7751F9EA7B400559FD5 /* LaunchScreen.storyboard in Resources */,
 				3D93B7721F9EA7B400559FD5 /* Assets.xcassets in Resources */,
 				3D93B7701F9EA7B400559FD5 /* Main.storyboard in Resources */,
+				3D279F281FC4890E00F04529 /* excel_form.xlsx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +364,7 @@
 			files = (
 				3D8E08E61FB7F9D1007C7ED2 /* SqueezeButton.swift in Sources */,
 				3D8681151FC3738500718638 /* SettingsManager.swift in Sources */,
+				3D279F261FC488AA00F04529 /* ExcelManager.swift in Sources */,
 				3DE136361FB53E29002F2C46 /* LilyTableController.swift in Sources */,
 				3D93B76D1F9EA7B400559FD5 /* ViewController.swift in Sources */,
 				3D93B76B1F9EA7B400559FD5 /* AppDelegate.swift in Sources */,
