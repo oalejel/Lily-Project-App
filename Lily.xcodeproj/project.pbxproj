@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D279F261FC488AA00F04529 /* ExcelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D279F251FC488AA00F04529 /* ExcelManager.swift */; };
+		3D279F281FC4890E00F04529 /* excel_form.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = 3D279F271FC4890E00F04529 /* excel_form.xlsx */; };
 		3D8681131FC371D100718638 /* SettingsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8681121FC371D100718638 /* SettingsTableController.swift */; };
 		3D8681151FC3738500718638 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8681141FC3738500718638 /* SettingsManager.swift */; };
 		3D8E08E61FB7F9D1007C7ED2 /* SqueezeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E08E51FB7F9D1007C7ED2 /* SqueezeButton.swift */; };
@@ -18,6 +19,10 @@
 		3D93B7751F9EA7B400559FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D93B7731F9EA7B400559FD5 /* LaunchScreen.storyboard */; };
 		3D93B7801F9EA7B400559FD5 /* LilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93B77F1F9EA7B400559FD5 /* LilyTests.swift */; };
 		3D93B78B1F9EA7B400559FD5 /* LilyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93B78A1F9EA7B400559FD5 /* LilyUITests.swift */; };
+		3DA3223A1FC5F13A00F8D560 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA322391FC5F13A00F8D560 /* MenuButton.swift */; };
+		3DA3223C1FC5F18A00F8D560 /* MenuButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3223B1FC5F18A00F8D560 /* MenuButton.xib */; };
+		3DA322431FC5F53900F8D560 /* eye_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA322411FC5F53800F8D560 /* eye_icon@2x.png */; };
+		3DA322441FC5F53900F8D560 /* plus_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA322421FC5F53900F8D560 /* plus_icon@2x.png */; };
 		3DE136361FB53E29002F2C46 /* LilyTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE136351FB53E29002F2C46 /* LilyTableController.swift */; };
 		3DF316E21FA3DB6800D6633B /* lily_flower@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF316E11FA3DB6800D6633B /* lily_flower@3x.png */; };
 		409DFF2A078B1A8643DDEE84 /* libPods-Lily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032FAA3611D5398628B57303 /* libPods-Lily.a */; };
@@ -63,6 +68,10 @@
 		3D93B7861F9EA7B400559FD5 /* LilyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D93B78A1F9EA7B400559FD5 /* LilyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilyUITests.swift; sourceTree = "<group>"; };
 		3D93B78C1F9EA7B400559FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA322391FC5F13A00F8D560 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		3DA3223B1FC5F18A00F8D560 /* MenuButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuButton.xib; sourceTree = "<group>"; };
+		3DA322411FC5F53800F8D560 /* eye_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye_icon@2x.png"; sourceTree = "<group>"; };
+		3DA322421FC5F53900F8D560 /* plus_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus_icon@2x.png"; sourceTree = "<group>"; };
 		3DE136351FB53E29002F2C46 /* LilyTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilyTableController.swift; sourceTree = "<group>"; };
 		3DF316E11FA3DB6800D6633B /* lily_flower@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lily_flower@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,9 +128,13 @@
 			isa = PBXGroup;
 			children = (
 				3D279F271FC4890E00F04529 /* excel_form.xlsx */,
+				3DA322411FC5F53800F8D560 /* eye_icon@2x.png */,
+				3DA322421FC5F53900F8D560 /* plus_icon@2x.png */,
 				3D93B76A1F9EA7B400559FD5 /* AppDelegate.swift */,
 				3D93B76C1F9EA7B400559FD5 /* ViewController.swift */,
 				3D93B76E1F9EA7B400559FD5 /* Main.storyboard */,
+				3DA322391FC5F13A00F8D560 /* MenuButton.swift */,
+				3DA3223B1FC5F18A00F8D560 /* MenuButton.xib */,
 				3D8681121FC371D100718638 /* SettingsTableController.swift */,
 				3D279F251FC488AA00F04529 /* ExcelManager.swift */,
 				3D8681141FC3738500718638 /* SettingsManager.swift */,
@@ -283,7 +296,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DF316E21FA3DB6800D6633B /* lily_flower@3x.png in Resources */,
+				3DA322441FC5F53900F8D560 /* plus_icon@2x.png in Resources */,
 				3D93B7751F9EA7B400559FD5 /* LaunchScreen.storyboard in Resources */,
+				3DA3223C1FC5F18A00F8D560 /* MenuButton.xib in Resources */,
+				3DA322431FC5F53900F8D560 /* eye_icon@2x.png in Resources */,
 				3D93B7721F9EA7B400559FD5 /* Assets.xcassets in Resources */,
 				3D93B7701F9EA7B400559FD5 /* Main.storyboard in Resources */,
 				3D279F281FC4890E00F04529 /* excel_form.xlsx in Resources */,
@@ -366,6 +382,7 @@
 				3D8681151FC3738500718638 /* SettingsManager.swift in Sources */,
 				3D279F261FC488AA00F04529 /* ExcelManager.swift in Sources */,
 				3DE136361FB53E29002F2C46 /* LilyTableController.swift in Sources */,
+				3DA3223A1FC5F13A00F8D560 /* MenuButton.swift in Sources */,
 				3D93B76D1F9EA7B400559FD5 /* ViewController.swift in Sources */,
 				3D93B76B1F9EA7B400559FD5 /* AppDelegate.swift in Sources */,
 				3D8681131FC371D100718638 /* SettingsTableController.swift in Sources */,

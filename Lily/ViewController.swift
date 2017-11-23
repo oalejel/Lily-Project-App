@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var addFormButton: UIButton!
-    @IBOutlet weak var viewDataButton: UIButton!
+    @IBOutlet weak var addFormButton: MenuButton!
+    @IBOutlet weak var viewDataButton: MenuButton!
     
     @IBOutlet weak var settingsButton: SqueezeButton!
     @IBOutlet weak var exportButton: SqueezeButton!
@@ -22,11 +22,13 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         
         addFormButton.layer.cornerRadius = 10
-        addFormButton.layer.masksToBounds = false
+        addFormButton.layer.masksToBounds = false // need this to show shadows
         addFormButton.layer.shadowColor = UIColor.black.cgColor
         addFormButton.layer.shadowOffset = CGSize(width: 0, height: 0)
         addFormButton.layer.shadowRadius = 5
         addFormButton.layer.shadowOpacity = 0.4
+        addFormButton.largeTitleLabel.text = "New Form"
+        addFormButton.image = UIImage(named: "plus_icon")
         
         viewDataButton.layer.cornerRadius = 10
         viewDataButton.layer.masksToBounds = false
@@ -34,6 +36,8 @@ class ViewController: UIViewController {
         viewDataButton.layer.shadowOffset = CGSize(width: 0, height: 0)
         viewDataButton.layer.shadowRadius = 5
         viewDataButton.layer.shadowOpacity = 0.4
+        viewDataButton.largeTitleLabel.text = "View Data"
+        viewDataButton.image = UIImage(named: "eye_icon")
         
         settingsButton.layer.cornerRadius = settingsButton.frame.size.height / 2
         settingsButton.layer.masksToBounds = false
@@ -52,6 +56,10 @@ class ViewController: UIViewController {
 //        let iconItem = UIBarButtonItem(customView: button)
         let flowerItem = UIBarButtonItem(image: flowerImage, style: .plain, target: nil, action: nil)
         navigationItem.rightBarButtonItem = flowerItem
+        
+        let em = ExcelManager()
+        em.write()
+        em.save()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

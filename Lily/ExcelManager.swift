@@ -17,11 +17,9 @@ class ExcelManager {
         spreadsheet = BRAOfficeDocumentPackage.open(docPath)
         
         if let worksheet = spreadsheet?.workbook.worksheets[0] as? BRAWorksheet {
-            print("got into worksheet")
-            
             //get string reference
-            let b6String = worksheet.cell(forCellReference: "B6").stringValue()
-            print(b6String)
+            let cellString = worksheet.cell(forCellReference: "A4").stringValue()
+            print(cellString)
             let b6Int = worksheet.cell(forCellReference: "B6").floatValue()
             print(b6Int)
             //writing
