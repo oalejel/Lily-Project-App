@@ -8,6 +8,25 @@
 
 import UIKit
 
+extension UIControl {
+    var computedValue: String {
+        switch self {
+        case is UITextField:
+            return (self as! UITextField).text!
+        case is UISwitch:
+            let on = (self as! UISwitch).isEnabled
+            return on ? "yes" : "no"
+        case is UIDatePicker:
+            let df = DateFormatter()
+            df.dateFormat = "M/d/Y"  //date format matches lily form examples
+            let date = (self as! UIDatePicker).date
+            return df.string(from: date)
+        default:
+            return "control computed value not implemented"
+        }
+    }
+}
+
 class FormItemView: UIView {
     var layedOut = false
     var mainStackView: UIStackView!

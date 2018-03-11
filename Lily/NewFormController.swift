@@ -14,6 +14,15 @@ class NewFormController: UIViewController {
     @IBOutlet weak var sectionLabel: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    var formInputClasses = ["Name":UITextField.self, "Age":UITextField.self, "Birthday":UIDatePicker.self]
+    var inputTitles = ["Name", "Age", "Birthday", "Community", "Current Address", "Gestations", "Births", "Abortions", "Miscarriages", "Age of initial sexual activity", "Number of sexual partners", "Number of children", "Last Menstruation", "Types of contraceptives used", "Date of first use of contraceptives", "Number of cryotherapy treatments", "Hormonal Treatments", "Radiation Treatments", "Hysterectomies", "Smoke??"]
+    
+    /*
+     Notes on some of the input types:
+     - we need to have age and birthday separated, since some patients know their age, but not their birth date for certain reasons
+ 
+ */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
